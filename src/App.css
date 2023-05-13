@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+/* overall css classes */
+
+body {
+  margin: 20px;
+  background: linear-gradient(0.25turn, #0e1316, #373837, #100e0c);
+  color: wheat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* sample components css */
+
+.sample-components-wrapper {
+  padding: 20px;
+}
+
+.sample-component {
+  border: 1px solid grey;
+  border-radius: 150px;
+  margin: 20px 0;
+  border-left-width: 10px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding: 10px 20px 15px 35px;
+}
+
+.sample-component h4 {
+  margin-top: 0;
+  padding-left: 25px;
+}
+
+.sample-component button {
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 550px) {
+  .sample-component h4 {
+    padding: 0;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .sample-component p {
+    text-align: center;
+  }
+
+  .sample-component button {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 550px) {
+  .sample-component h4 {
+    padding-left: 40px;
+  }
+
+  .sample-component p {
+    padding-left: 20px;
   }
 }
