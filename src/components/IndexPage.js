@@ -2,14 +2,13 @@ import React from "react";
 import SubMenu from "./SubMenu";
 import { useState } from "react";
 
-import { ReactComponent as Menu_icon00 } from "../icons/menu_bar/menu_bar_0.svg";
-import { ReactComponent as Menu_icon01 } from "../icons/menu_bar/menu_bar_1.svg";
-import { ReactComponent as Menu_icon02 } from "../icons/menu_bar/menu_bar_2.svg";
-import { ReactComponent as Menu_icon03 } from "../icons/menu_bar/menu_bar_3.svg";
-import { ReactComponent as Menu_icon04 } from "../icons/menu_bar/menu_bar_4.svg";
-import { ReactComponent as Menu_icon05 } from "../icons/menu_bar/menu_bar_5.svg";
-import { ReactComponent as Menu_icon06 } from "../icons/menu_bar/menu_bar_6.svg";
-import { ReactComponent as Menu_icon07 } from "../icons/menu_bar/menu_bar_7.svg";
+import { ReactComponent as MenuIcon00 } from "../icons/menu_bar/menu_bar_0.svg";
+import { ReactComponent as MenuIcon01 } from "../icons/menu_bar/menu_bar_1.svg";
+import { ReactComponent as MenuIcon02 } from "../icons/menu_bar/menu_bar_2.svg";
+import { ReactComponent as MenuIcon03 } from "../icons/menu_bar/menu_bar_3.svg";
+import { ReactComponent as MenuIcon04 } from "../icons/menu_bar/menu_bar_4.svg";
+import { ReactComponent as MenuIcon06 } from "../icons/menu_bar/menu_bar_6.svg";
+import { ReactComponent as MenuIcon07 } from "../icons/menu_bar/menu_bar_7.svg";
 
 function IndexPage() {
   var [openMenu, setOpenMenu] = useState(0);
@@ -39,6 +38,20 @@ function IndexPage() {
       id: "menu-03",
       title: "Source",
       body: "Any source info would go here",
+      options: [
+        {
+          name: "usb",
+          selected: true,
+        },
+        {
+          name: "spotify",
+          selected: false,
+        },
+        {
+          name: "airplay",
+          selected: true,
+        },
+      ],
     },
     {
       id: "menu-03",
@@ -64,7 +77,7 @@ function IndexPage() {
               className={openMenu === 0 ? "active" : ""}
               onClick={() => setOpenMenu(0)}
             >
-              <Menu_icon00
+              <MenuIcon00
                 className={openMenu === 0 ? "active" : "test-animation"}
               />
             </button>
@@ -72,7 +85,7 @@ function IndexPage() {
               className={openMenu === 1 ? "active" : ""}
               onClick={() => setOpenMenu(1)}
             >
-              <Menu_icon01
+              <MenuIcon01
                 className={openMenu === 1 ? "active" : "test-animation"}
               />
             </button>
@@ -80,7 +93,7 @@ function IndexPage() {
               className={openMenu === 2 ? "active" : ""}
               onClick={() => setOpenMenu(2)}
             >
-              <Menu_icon02
+              <MenuIcon02
                 className={openMenu === 2 ? "active" : "test-animation"}
               />
             </button>
@@ -88,7 +101,7 @@ function IndexPage() {
               className={openMenu === 3 ? "active" : ""}
               onClick={() => setOpenMenu(3)}
             >
-              <Menu_icon03
+              <MenuIcon03
                 className={openMenu === 3 ? "active" : "test-animation"}
               />
             </button>
@@ -96,7 +109,7 @@ function IndexPage() {
               className={openMenu === 4 ? "active" : ""}
               onClick={() => setOpenMenu(4)}
             >
-              <Menu_icon04
+              <MenuIcon04
                 className={openMenu === 4 ? "active" : "test-animation"}
               />
             </button>
@@ -104,7 +117,7 @@ function IndexPage() {
               className={openMenu === 5 ? "active" : ""}
               onClick={() => setOpenMenu(5)}
             >
-              <Menu_icon06
+              <MenuIcon06
                 className={openMenu === 5 ? "active" : "test-animation"}
               />
             </button>
@@ -112,7 +125,7 @@ function IndexPage() {
               className={openMenu === 6 ? "active" : ""}
               onClick={() => setOpenMenu(6)}
             >
-              <Menu_icon07
+              <MenuIcon07
                 className={openMenu === 6 ? "active" : "test-animation"}
               />
             </button>
